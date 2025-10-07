@@ -1,4 +1,4 @@
-name: srl-l3-evpn-mh # saved as /home/webert@ion.de.alcatel-lucent.com/clab/srl-l3-evpn-mh/srl-l3-evpn-mh.clab.yml
+name: srl-l3-evpn-mh
 
 topology:
   kinds:
@@ -26,7 +26,7 @@ topology:
       kind: nokia_srlinux
 
   links:
-    # inter-switch link
+    # inter-switch links
     - type: veth
       endpoints:
         - node: spine1
@@ -109,7 +109,7 @@ topology:
           vars:
             ipv4: 100.64.0.15/31
 
-
+    # access links
     - type: veth
       endpoints:
         - node: ce1
