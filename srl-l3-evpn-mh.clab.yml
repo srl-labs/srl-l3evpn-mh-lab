@@ -3,7 +3,7 @@ name: srl-l3-evpn-mh
 topology:
   kinds:
     nokia_srlinux:
-      image: ghcr.io/nokia/srlinux:24.10.2
+      image: ghcr.io/nokia/srlinux:25.7.2
       type: ixr-d3l
       startup-config: configs/__clabNodeName__.partial.cfg
 

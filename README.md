@@ -6,7 +6,7 @@ This lab showcases L3 EVPN Multi-Homing with centralized routers using SR Linux 
 <div align="center"> ![EDA Arena Rack Topology](images/srl-l3-evpn-mh.clab.png)</div>
 
 ## Components
-Tested with containerlab version `v0.70.2` and SR Linux version `24.10.2`.
+Tested with containerlab version `v0.70.2` and SR Linux version `25.7.2`.
 
 ## Deploy lab
 All configs are prepared, so you just need to deploy the containerlab file.
