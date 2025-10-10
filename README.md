@@ -1,15 +1,21 @@
 # SRL L3 EVPN Multi-Homing Lab
 
-This lab showcases L3 EVPN Multi-Homing with centralized routers using SR Linux nodes.
+This lab showcases L3 EVPN Multi-Homing with centralized routers using [SR Linux](https://learn.srlinux.dev) nodes.
 
 ## Lab topology
-<div align="center"> ![EDA Arena Rack Topology](images/srl-l3-evpn-mh.clab.png)</div>
+
+<p align="center" width="100%">
+    <img src="images/srl-l3-evpn-mh.clab.png" alt="lab topo">
+</p>
 
 ## Components
-Tested with containerlab version `v0.70.2` and SR Linux version `25.7.2`.
+
+Tested with [containerlab](https://containerlab.dev/) version `v0.70.2` and SR Linux version `25.7.2`.
 
 ## Deploy lab
+
 All configs are prepared, so you just need to deploy the containerlab file.
+
 ```bash
 clab deploy -t srl-l3-evpn-mh.clab.yml
 ```
@@ -20,11 +26,14 @@ The lab consists of 2 spines and 4 leafs forming an EVPN datacenter fabric. The 
 
 `CE1` is connected to `Leaf1` and `Leaf2` with 2 L3 links (/31). The same applies for `CE2` towards `Leaf3` and `Leaf4`.
 
-<div align="center"> ![EDA Arena Rack Topology](images/srl-l3-evpn-mh-ethernet-segments.png)</div>
+<p align="center" width="100%">
+    <img src="images/srl-l3-evpn-mh-ethernet-segments.png" alt="netw details">
+</p>
 
 The leafs are explicitly configured as primary nodes within the ethernet-segment, whereas the centralized routers are implicitly configured as backup - not advertising themselves as next-hop for the ES.
 
 ### Ethernet-Segment config Leaf
+
 ```
 system {
     network-instance {
@@ -65,6 +74,7 @@ system {
 ```
 
 ### Ethernet-Segment config spine (centralized router)
+
 ```
 system {
     network-instance {
