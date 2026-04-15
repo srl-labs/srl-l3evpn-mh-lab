@@ -1,103 +1,147 @@
 {
   "freeTextAnnotations": [],
+  "freeShapeAnnotations": [],
+  "trafficRateAnnotations": [],
   "groupStyleAnnotations": [],
-  "cloudNodeAnnotations": [],
+  "networkNodeAnnotations": [],
   "nodeAnnotations": [
     {
       "id": "spine1",
       "icon": "router",
       "position": {
-        "x": 203,
-        "y": 91
+        "x": 140,
+        "y": 80
       },
       "geoCoordinates": {
         "lat": 49.24508245670409,
         "lng": 9.226939028837302
-      }
+      },
+      "interfacePattern": "e1-{n}",
+      "labelPosition": "top"
     },
     {
       "id": "spine2",
       "icon": "router",
       "position": {
-        "x": 259,
-        "y": 91
+        "x": 420,
+        "y": 80
       },
       "geoCoordinates": {
         "lat": 48.8198212374349,
         "lng": 9.757867295662209
-      }
+      },
+      "interfacePattern": "e1-{n}",
+      "labelPosition": "top"
     },
     {
       "id": "leaf1",
       "icon": "router",
       "position": {
-        "x": 147,
-        "y": 175
+        "x": 60,
+        "y": 220
       },
       "geoCoordinates": {
         "lat": 49.25861031170153,
         "lng": 10.10210558613287
-      }
+      },
+      "interfacePattern": "e1-{n}"
     },
     {
       "id": "leaf2",
       "icon": "router",
       "position": {
-        "x": 203,
-        "y": 175
+        "x": 220,
+        "y": 220
       },
       "geoCoordinates": {
         "lat": 49.51526474678428,
         "lng": 9.579430999807691
-      }
+      },
+      "interfacePattern": "e1-{n}"
     },
     {
       "id": "leaf3",
       "icon": "router",
       "position": {
-        "x": 259,
-        "y": 175
+        "x": 340,
+        "y": 220
       },
       "geoCoordinates": {
         "lat": 49.13150137927306,
         "lng": 9.917715626041879
-      }
+      },
+      "interfacePattern": "e1-{n}"
     },
     {
       "id": "leaf4",
       "icon": "router",
       "position": {
-        "x": 315,
-        "y": 175
+        "x": 500,
+        "y": 220
       },
       "geoCoordinates": {
         "lat": 49.72159123293708,
         "lng": 10.07145143645672
-      }
+      },
+      "interfacePattern": "e1-{n}"
     },
     {
       "id": "ce1",
       "icon": "router",
       "position": {
-        "x": 175,
-        "y": 217
+        "x": 140,
+        "y": 340
       },
       "geoCoordinates": {
         "lat": 49.384962884231506,
         "lng": 10.514741478528695
-      }
+      },
+      "interfacePattern": "e1-{n}"
     },
     {
       "id": "ce2",
       "icon": "router",
       "position": {
-        "x": 287,
-        "y": 217
+        "x": 420,
+        "y": 340
       },
       "geoCoordinates": {
         "lat": 49.497504563600295,
         "lng": 10.596516576010018
-      }
+      },
+      "interfacePattern": "e1-{n}"
     }
-  ]
+  ],
+  "edgeAnnotations": [
+    {
+      "id": "Clab-Link5",
+      "source": "spine2",
+      "target": "leaf2",
+      "sourceEndpoint": "e1-2",
+      "targetEndpoint": "e1-32",
+      "endpointLabelOffsetEnabled": true,
+      "endpointLabelOffset": 20
+    },
+    {
+      "id": "Clab-Link6",
+      "source": "spine2",
+      "target": "leaf3",
+      "sourceEndpoint": "e1-3",
+      "targetEndpoint": "e1-32",
+      "endpointLabelOffsetEnabled": true,
+      "endpointLabelOffset": 29
+    },
+    {
+      "id": "Clab-Link2",
+      "source": "spine1",
+      "target": "leaf3",
+      "sourceEndpoint": "e1-3",
+      "targetEndpoint": "e1-31",
+      "endpointLabelOffsetEnabled": true,
+      "endpointLabelOffset": 33
+    }
+  ],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {},
+  "cloudNodeAnnotations": []
 }

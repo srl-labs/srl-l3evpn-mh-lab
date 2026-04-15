@@ -10,7 +10,7 @@ This lab showcases L3 EVPN Multi-Homing with centralized routers using [SR Linux
 
 ## Components
 
-Tested with [containerlab](https://containerlab.dev/) version `v0.70.2` and SR Linux version `25.7.2`.
+Tested with [containerlab](https://containerlab.dev/) version `v0.74.3` and SR Linux version `25.7.2`.
 
 ## Deploy lab
 

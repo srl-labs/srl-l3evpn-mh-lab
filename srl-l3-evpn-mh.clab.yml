@@ -31,122 +31,98 @@ topology:
       endpoints:
         - node: spine1
           interface: e1-1
-          vars:
-            ipv4: 100.64.0.0/31
+          ipv4: 100.64.0.0/31
         - node: leaf1
           interface: e1-31
-          vars:
-            ipv4: 100.64.0.1/31
+          ipv4: 100.64.0.1/31
     - type: veth
       endpoints:
         - node: spine1
           interface: e1-2
-          vars:
-            ipv4: 100.64.0.2/31
+          ipv4: 100.64.0.2/31
         - node: leaf2
           interface: e1-31
-          vars:
-            ipv4: 100.64.0.3/31
+          ipv4: 100.64.0.3/31
     - type: veth
       endpoints:
         - node: spine1
           interface: e1-3
-          vars:
-            ipv4: 100.64.0.4/31
+          ipv4: 100.64.0.4/31
         - node: leaf3
           interface: e1-31
-          vars:
-            ipv4: 100.64.0.5/31
+          ipv4: 100.64.0.5/31
     - type: veth
       endpoints:
         - node: spine1
           interface: e1-4
-          vars:
-            ipv4: 100.64.0.6/31
+          ipv4: 100.64.0.6/31
         - node: leaf4
           interface: e1-31
-          vars:
-            ipv4: 100.64.0.7/31
+          ipv4: 100.64.0.7/31
 
     - type: veth
       endpoints:
         - node: spine2
           interface: e1-1
-          vars:
-            ipv4: 100.64.0.8/31
+          ipv4: 100.64.0.8/31
         - node: leaf1
           interface: e1-32
-          vars:
-            ipv4: 100.64.0.9/31
+          ipv4: 100.64.0.9/31
     - type: veth
       endpoints:
         - node: spine2
           interface: e1-2
-          vars:
-            ipv4: 100.64.0.10/31
+          ipv4: 100.64.0.10/31
         - node: leaf2
           interface: e1-32
-          vars:
-            ipv4: 100.64.0.11/31
+          ipv4: 100.64.0.11/31
     - type: veth
       endpoints:
         - node: spine2
           interface: e1-3
-          vars:
-            ipv4: 100.64.0.12/31
+          ipv4: 100.64.0.12/31
         - node: leaf3
           interface: e1-32
-          vars:
-            ipv4: 100.64.0.13/31
+          ipv4: 100.64.0.13/31
     - type: veth
       endpoints:
         - node: spine2
           interface: e1-4
-          vars:
-            ipv4: 100.64.0.14/31
+          ipv4: 100.64.0.14/31
         - node: leaf4
           interface: e1-32
-          vars:
-            ipv4: 100.64.0.15/31
+          ipv4: 100.64.0.15/31
 
     # access links
     - type: veth
       endpoints:
         - node: ce1
           interface: e1-1
-          vars:
-            ipv4: 192.168.1.1/31
+          ipv4: 192.168.1.1/31
         - node: leaf1
           interface: e1-1
-          vars:
-            ipv4: 192.168.1.0/31
+          ipv4: 192.168.1.0/31
     - type: veth
       endpoints:
         - node: ce1
           interface: e1-2
-          vars:
-            ipv4: 192.168.2.1/31
+          ipv4: 192.168.2.1/31
         - node: leaf2
           interface: e1-2
-          vars:
-            ipv4: 192.168.2.0/31
+          ipv4: 192.168.2.0/31
     - type: veth
       endpoints:
         - node: ce2
           interface: e1-1
-          vars:
-            ipv4: 192.168.3.1/31
+          ipv4: 192.168.3.1/31
         - node: leaf3
           interface: e1-1
-          vars:
-            ipv4: 192.168.3.0/31
+          ipv4: 192.168.3.0/31
     - type: veth
       endpoints:
         - node: ce2
           interface: e1-2
-          vars:
-            ipv4: 192.168.4.1/31
+          ipv4: 192.168.4.1/31
         - node: leaf4
           interface: e1-2
-          vars:
-            ipv4: 192.168.4.0/31
+          ipv4: 192.168.4.0/31
